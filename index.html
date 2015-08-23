@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>fullPage.js One Page Scroll Sites</title>
+    <meta name="author" content="Alvaro Trigo Lopez"/>
+    <meta name="description"
+          content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website."/>
+    <meta name="keywords" content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple"/>
+    <meta name="Resource-type" content="Document"/>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Pacifico|Abel|Stardos+Stencil' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/examples.css"/>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.js"/>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+//                sectionsColor: ['#674583', 'white', '#674583'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'sixpage'],
+                menu: '#menu',
+                scrollingSpeed: 1000
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+
+<!--<ul id="menu">-->
+    <!--<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>-->
+    <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
+    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
+    <!--<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>-->
+<!--</ul>-->
+
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
+                        <li data-menuanchor="3rdPage"><a href="#3rdPage">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img class="img-responsive os" src="img/os.png">
+
+        <div><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
+                class="fa fa-chevron-down fa-2x sdown"></i></a></div>
+    </div>
+    <div class="section" id="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="img/logo2.png" class="img-responsive center-block" alt=""/>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-lg-4 col-lg-offset-4 col-md-offset-2">
+                        <p>
+                            Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
+                            form of a manual that in ancient India were written down in books of palm leaves sewn
+                            together with a thread.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 white">
+                    <h2>Location</h2>
+
+                    <h3>
+                        2452 Queen Street East
+                        <br>
+                        Brampton
+                        <br>
+                        Ontario - L6S 5X9
+                        <br>
+
+                    </h3>
+                    <h6><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp;
+                        1-905-789-7999</i></a></h6>
+                    <h6><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra
+                        (Toll Free)</i></a></h6>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6786225876563!2d-79.70335209999999!3d43.73800269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3dae55761cf5%3A0x899ff64e1c8a0420!2s2452+Queen+St+E%2C+Brampton%2C+ON+L6S+5X9!5e0!3m2!1sen!2sca!4v1438761723407"
+                            width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.js"> </script>
+</body>
+</html>

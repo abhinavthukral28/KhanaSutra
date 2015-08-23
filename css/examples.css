@@ -1,0 +1,134 @@
+@CHARSET "ISO-8859-1";
+body{
+	padding: 0;
+	margin: 0;
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+#section0{
+	background: url("../img/tlogo.jpg") no-repeat center center fixed;
+    padding: 0 0 0 0;
+    background-color: #674583;
+}
+#section1{
+    background: url("../img/whitebg.jpg") no-repeat center center fixed;
+
+}
+#section2{
+    background-color: #674583;
+}
+@media screen and (max-width: 1024px) {
+    #section0 {
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
+    .imgbg {
+        /* Set rules to fill background */
+        min-width: 100%;
+
+        /* Set up proportionate scaling */
+        width: 100vh;
+        height: auto;
+
+    }
+    #section1{
+
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 50vh !important;
+}
+.sdown{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+}
+.os{
+    max-height: 100px;
+    position: fixed;
+}
+a, a:hover, a:visited{
+    color: white;
+}
+.phone{
+    margin: 30px;
+}
+.section{
+    text-align:center;
+}
+h1{
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+h2{
+    font-family: 'Stardos Stencil', cursive;
+    font-size: xx-large;
+}
+h3{
+    font-family: 'Abel', sans-serif;
+}
+.white{
+    color: white;
+}
+

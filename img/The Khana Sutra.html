@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>The Khana Sutra</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/custom.css"/>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico|Abel|Stardos+Stencil' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+    <script src="fullPage.js/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+
+				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+				css3:false
+			});
+		});
+	</script>
+    <script>
+        $('#button1Id').onclick(function(){
+            $.fn.fullpage.moveSectionDown();
+        });
+
+
+        $('#button2Id').click(function(){
+            $.fn.fullpage.moveSectionUp();
+        });
+
+    </script>
+
+</head>
+<body>
+<!--<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top" role="navigation">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header"><a class="navbar-brand" href="#">The Khana Sutra</a>-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse navbar-menubuilder">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="/">Home</a>-->
+                <!--</li>-->
+                <!--<li><a href="/products">Products</a>-->
+                <!--</li>-->
+                <!--<li><a href="/about-us">About Us</a>-->
+                <!--</li>-->
+                <!--<li><a href="/contact">Contact Us</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div id="fullpage">
+	<div class="section " id="section0">
+        <img class="img-responsive os" src="img/os.png">
+        <div><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i class="fa fa-chevron-down fa-2x sdown"></i></a></div>
+    </div>
+	<div class="section" id="section2">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2>Location</h2>
+                    <h3>
+                        2452 Queen Street East
+                        <br>
+                        Brampton
+                        <br>
+                        Ontario - L6S 5X9
+                        <br>
+
+                    </h3>
+                    <h6><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp; 1-905-789-7999</i></a></h6>
+                    <h6><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra (Toll Free)</i></a></h6>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6786225876563!2d-79.70335209999999!3d43.73800269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3dae55761cf5%3A0x899ff64e1c8a0420!2s2452+Queen+St+E%2C+Brampton%2C+ON+L6S+5X9!5e0!3m2!1sen!2sca!4v1438761723407" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
