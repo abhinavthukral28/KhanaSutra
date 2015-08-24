@@ -2,47 +2,12 @@
 body{
 	padding: 0;
 	margin: 0;
-	font-family: arial,helvetica;
-	color: #333;
-	color: rgba(0,0,0,0.5);
-}
-#menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
-}
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-}
-#menu li.active a:hover{
-	color: #000;
-}
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
+	color: white;
 }
 #menu{
 	position:fixed;
 	top:0;
 	left:0;
-	height: 40px;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
@@ -50,8 +15,8 @@ body{
 }
 #section0{
 	background: url("../img/tlogo.jpg") no-repeat center center fixed;
-    padding: 0 0 0 0;
     background-color: #674583;
+    text-align: center;
 }
 #section1{
     background: url("../img/whitebg.jpg") no-repeat center center fixed;
@@ -96,17 +61,14 @@ body{
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 50vh !important;
+    height: 80% !important;
 }
 .sdown{
     color: white;
     position: absolute;
     bottom: 20px;
 }
-.os{
-    max-height: 100px;
-    position: fixed;
-}
+
 a, a:hover, a:visited{
     color: white;
 }
@@ -115,20 +77,30 @@ a, a:hover, a:visited{
 }
 .section{
     text-align:center;
+    padding-top: 70px;
 }
-h1{
-    color: #fff;
-    margin:0;
-    padding:0;
-}
-h2{
-    font-family: 'Stardos Stencil', cursive;
-    font-size: xx-large;
-}
-h3{
-    font-family: 'Abel', sans-serif;
-}
+
 .white{
     color: white;
+}
+.nav-wrapper {
+    background-color: #674583;
+    padding: 0;
+    margin-left: 20px;
+    color: transparent;
+
+}
+
+nav {
+    background-color: #674583;
+
+}
+.os{
+    max-height: 10vh;
+    position: absolute;
+    left: 20px;
+}
+.side-nav{
+    background-color: #674583;
 }
 
