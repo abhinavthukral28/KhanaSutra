@@ -1,0 +1,21 @@
+{
+  "name": "TheKhanaSutra",
+  "version": "0.2",
+  "authors": [
+    "Abhinav Thukral <abhinav@abhinavthukral.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "thekhanasutra.ca",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "Materialize": "materialize#~0.97.0"
+  }
+}
