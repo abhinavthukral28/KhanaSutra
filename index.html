@@ -5,18 +5,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="theme-color" content="#674583">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>The Khana-Sutra</title>
 
 
     <link href='http://fonts.googleapis.com/css?family=Pacifico|Abel|Stardos+Stencil' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css"/>
     <link rel="stylesheet" type="text/css" href="css/examples.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="bower_components/Materialize/dist/js/materialize.js"> </script>
-
-
+    <script src="bower_components/Materialize/dist/js/materialize.js"></script>
 
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
@@ -24,60 +24,68 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
-//                sectionsColor: ['#674583', 'white', '#674583'],
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'sixpage'],
                 menu: '#menu',
                 scrollingSpeed: 1000
             });
             $(".button-collapse").sideNav();
+            window.scrollTo(0, 1);
         });
     </script>
 
 </head>
 <body>
 
+<header>
+    <nav id="menu" class="z-depth-0">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact Us</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!--<ul id="menu">-->
-    <!--<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>-->
-    <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
-    <!--<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>-->
-    <!--<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>-->
-<!--</ul>-->
-<nav id="menu" class="z-depth-1">
-    <div class="nav-wrapper">
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
-        <ul class="right hide-on-med-and-down">
-            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact Us</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-            <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact Us</a></li>
-        </ul>
-    </div>
-</nav>
-
+</header>
 <div id="fullpage">
     <div class="section" id="section0">
         <div class="container"><img class="os" src="img/os.png">
-        <div><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
-                class="fa fa-chevron-down fa-2x sdown"></i></a></div></div>
+
+            <div><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
+                    class="fa fa-chevron-down fa-2x sdown"></i></a></div>
+        </div>
     </div>
     <div class="section" id="section1">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <img src="img/logo2.png" class="img-responsive center-block" alt=""/>
-                </div>
+        <div class="container valign-wrapper">
+            <div class="valign">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-lg-4 col-lg-offset-4 col-md-offset-2">
-                        <p>
-                            Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
-                            form of a manual that in ancient India were written down in books of palm leaves sewn
-                            together with a thread.
-                        </p>
+                    <div class="col s12 m12 l12">
+                        <img src="img/tlogocrop.png" class="responsive-img center-align title-img" alt=""/>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6 offset-l3 offset-m3">
+                            <p>
+                                Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
+                                form of a manual that in ancient India were written down in books of palm leaves sewn
+                                together with a thread.
+                            </p>
+
+                            <p>
+                                Shakespeare said, “If music be the food of love play on”
+                                And khanasutra adds, “If food be the music of life eat on”
+                            </p>
+
+                            <p>
+                                So we bring together good food and good music
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,9 +95,9 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <h3>Location</h3>
+                    <h4>Location</h4>
 
-                    <h4>
+                    <h5>
                         2452 Queen Street East
                         <br>
                         Brampton
@@ -97,11 +105,11 @@
                         Ontario - L6S 5X9
                         <br>
 
-                    </h4>
-                    <h5><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp;
-                        1-905-789-7999</i></a></h5>
-                    <h5><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra
-                        (Toll Free)</i></a></h5>
+                    </h5>
+                    <h7><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp;
+                        1-905-789-7999</i></a></h7>
+                    <h7><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra
+                        (Toll Free)</i></a></h7>
                 </div>
             </div>
             <br>
