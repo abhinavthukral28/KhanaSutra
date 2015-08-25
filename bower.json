@@ -8,11 +8,6 @@
   "license": "MIT",
   "homepage": "thekhanasutra.ca",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
   ],
   "dependencies": {
     "jquery": "~2.1.1",
