@@ -135,6 +135,6 @@ nav ul li.active{
     bottom: 25px;
     right: 25px;
 }
-footer{
-    background-color: #674583;
+.img-box{
+    max-height: 20%;
 }
