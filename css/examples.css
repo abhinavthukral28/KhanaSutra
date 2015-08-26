@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	color: white;
     font-size: 16px;
+    background-color: #674583;
 }
 #menu{
 	position:fixed;
