@@ -135,3 +135,6 @@ nav ul li.active{
     bottom: 25px;
     right: 25px;
 }
+.img-box{
+    max-height: 20%;
+}

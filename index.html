@@ -26,6 +26,7 @@
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage', 'sixpage'],
                 menu: '#menu',
+                responsiveWidth: 999,
                 scrollingSpeed: 1000
             });
             $(".button-collapse").sideNav();
@@ -58,45 +59,39 @@
     <div class="section" id="section0">
         <div class="container"><img class="os" src="img/os.png">
 
-            <div><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
+            <div class="hide-on-med-and-down"><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
                     class="fa fa-chevron-down fa-2x sdown"></i></a></div>
         </div>
     </div>
     <div class="section" id="section1">
-        <div class="container valign-wrapper">
-            <div class="valign">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <img src="img/tlogocrop.png" class="responsive-img center-align title-img" alt=""/>
+                </div>
                 <div class="row">
-                    <div class="col s12 m12 l12">
-                        <img src="img/tlogocrop.png" class="responsive-img center-align title-img" alt=""/>
+                    <div class="col s12 m3 l3">
+                        <img src="img/untitled%20folder/sitting.png" class="responsive-img hide-on-small-and-down">
                     </div>
-                    <div class="row">
-                        <div class="col s12 m3 l3">
-                            <img src="img/untitled%20folder/sitting.png" class="responsive-img hide-on-small-and-down">
-                        </div>
-                        <div class="col s12 m6 l6">
-                            <p>
-                                Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
-                                form of a manual that in ancient India were written down in books of palm leaves sewn
-                                together with a thread.
-                            </p>
+                    <div class="col s12 m6 l6">
+                        <p>
+                            Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
+                            form of a manual that in ancient India were written down in books of palm leaves sewn
+                            together with a thread.
+                        </p>
 
-                            <p>
-                                Shakespeare said, “If music be the food of love play on”
-                                And khanasutra adds, “If food be the music of life eat on”
-                            </p>
+                        <p>
+                            Shakespeare said, “If music be the food of love play on”
+                            And khanasutra adds, “If food be the music of life eat on”
+                        </p>
 
-                            <p>
-                                So we bring together good food and good music
-                            </p>
-                            <img class="responsive-img hide-on-med-and-down" src="img/untitled%20folder/violin.png">
-                        </div>
-                        <div class="col s12 m3 l3 hide-on-small-and-down">
-                            <img class="responsive-img" src="img/untitled%20folder/deserts.png">
-                        </div>
+                        <p>
+                            So we bring together good food and good music
+                        </p>
+                        <img class="responsive-img hide-on-med-and-down title-img" src="img/untitled%20folder/violin.png">
                     </div>
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                        </div>
+                    <div class="col s12 m3 l3 hide-on-small-and-down">
+                        <img class="responsive-img" src="img/untitled%20folder/deserts.png">
                     </div>
                 </div>
             </div>
