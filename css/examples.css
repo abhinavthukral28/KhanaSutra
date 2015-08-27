@@ -64,9 +64,9 @@ body{
     }
 
 }
-@media screen and (max-width: 999px){
+@media screen and (max-height: 500px){
     .section{
-        overflow: hidden;
+        overflow: scroll;
     }
 }
 .google-maps {
