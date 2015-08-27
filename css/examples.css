@@ -64,11 +64,6 @@ body{
     }
 
 }
-@media screen and (max-height: 500px){
-    .section{
-        overflow: scroll;
-    }
-}
 .google-maps {
     position: relative;
     padding-bottom: 50%;
@@ -98,7 +93,6 @@ a, a:hover, a:visited{
 .section{
     text-align:center;
     padding-top: 60px;
-    overflow: hidden;
 }
 
 .white{
