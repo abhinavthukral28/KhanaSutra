@@ -116,6 +116,7 @@ nav {
     max-height: 10vh;
     position: absolute;
     left: 20px;
+    top: 48px;
 }
 .side-nav{
     background-color: #674583;
