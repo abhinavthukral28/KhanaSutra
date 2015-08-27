@@ -59,6 +59,10 @@ body{
     #menu{
         height: 48px;
     }
+    .section{
+        padding-top: auto;
+        overflow: auto;
+    }
 
 }
 .google-maps {
@@ -90,6 +94,7 @@ a, a:hover, a:visited{
 .section{
     text-align:center;
     padding-top: 60px;
+    overflow: auto;
 }
 
 .white{
