@@ -61,9 +61,13 @@ body{
     }
     .section{
         padding-top: auto;
-        overflow: auto;
     }
 
+}
+@media screen and (max-width: 999px){
+    .section{
+        overflow: hidden;
+    }
 }
 .google-maps {
     position: relative;
@@ -94,7 +98,7 @@ a, a:hover, a:visited{
 .section{
     text-align:center;
     padding-top: 60px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .white{
