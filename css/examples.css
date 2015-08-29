@@ -1,30 +1,35 @@
 @CHARSET "ISO-8859-1";
-body{
-	padding: 0;
-	margin: 0;
-	color: white;
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
     font-size: 16px;
     background-color: #674583;
 }
-#menu{
-	position:fixed;
-	top:0;
-	left:0;
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1100;
     height: auto;
 }
-#section0{
-	background: url("../img/tlogocrop.png") no-repeat center center fixed;
+
+#section0 {
+    background: url("../img/tlogocrop.png") no-repeat center center fixed;
     background-color: #674583;
     text-align: center;
 }
-#section1{
+
+#section1 {
     background-color: #674583;
 
 }
-#section2{
+
+#section2 {
     background-color: #674583;
 }
+
 @media screen and (max-width: 1024px) {
     #section0 {
         -webkit-background-size: contain;
@@ -42,7 +47,8 @@ body{
         height: auto;
 
     }
-    #section1{
+
+    #section1 {
 
         -webkit-background-size: contain;
         -moz-background-size: contain;
@@ -51,25 +57,30 @@ body{
     }
 
 }
-@media screen and (max-width: 999px){
-    nav a.button-collapse i{
+
+@media screen and (max-width: 999px) {
+    nav a.button-collapse i {
         height: 48px;
         line-height: 48px;
     }
-    #menu{
+
+    #menu {
         height: 48px;
     }
-    .section{
+
+    .section {
         padding-top: auto;
     }
 
 }
+
 .google-maps {
     position: relative;
     padding-bottom: 50%;
     height: 0;
     overflow: hidden;
 }
+
 .google-maps iframe {
     position: absolute;
     top: 0;
@@ -77,27 +88,31 @@ body{
     width: 100% !important;
     height: 80% !important;
 }
-.sdown{
+
+.sdown {
     color: white;
     position: absolute;
     bottom: 20px;
     background-color: #674583;
 }
 
-a, a:hover, a:visited{
+a, a:hover, a:visited {
     color: white;
 }
-.phone{
+
+.phone {
     margin: 30px;
 }
-.section{
-    text-align:center;
+
+.section {
+    text-align: center;
     padding-top: 60px;
 }
 
-.white{
+.white {
     color: white;
 }
+
 .nav-wrapper {
     background-color: transparent;
     padding: 0;
@@ -112,33 +127,43 @@ nav {
     text-align: center;
 
 }
-.os{
+
+.os {
     max-height: 10vh;
     position: absolute;
     left: 20px;
     top: 48px;
 }
-.side-nav{
+
+.side-nav {
     background-color: #674583;
 }
-.title-img{
+
+.title-img {
     max-height: 150px;
 }
 
-.card{
+.card {
 
     color: black;
 
 }
-nav ul li.active{
+
+nav ul li.active {
     background-color: inherit;
 }
 
-.fab{
+.fab {
     position: fixed;
     bottom: 25px;
     right: 25px;
 }
-.img-box{
+
+.img-box {
     max-height: 20%;
 }
+
+.now {
+    -webkit-transform: rotate(320deg);
+}
+
