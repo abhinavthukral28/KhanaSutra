@@ -12,8 +12,8 @@
     <link href='http://fonts.googleapis.com/css?family=Pacifico|Abel|Stardos+Stencil' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css"/>
     <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"/>
+    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css"/>
     <link rel="stylesheet" type="text/css" href="css/examples.css"/>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -29,7 +29,13 @@
                 responsiveWidth: 999,
                 scrollingSpeed: 1000
             });
-            $(".button-collapse").sideNav();
+            $('.button-collapse').sideNav({
+                        menuWidth: 300, // Default is 240
+                        edge: 'left', // Choose the horizontal origin
+                        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    }
+            );
+
             window.scrollTo(0, 1);
         });
     </script>
@@ -88,7 +94,7 @@
                         <p>
                             So we bring together good food and good music
                         </p>
-                        <img class="responsive-img" src="img/untitled%20folder/violin.png">
+                        <img class="responsive-img title-img" src="img/untitled%20folder/violin.png">
                     </div>
                     <div class="col s12 m3 l3 hide-on-small-and-down">
                         <img class="responsive-img" src="img/untitled%20folder/deserts.png">
