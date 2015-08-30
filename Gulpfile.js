@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 // create new instance of BrowserSync
 var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('watch', function (gulpCallback) {
     browserSync.init({
@@ -23,4 +25,14 @@ gulp.task('watch', function (gulpCallback) {
         // notify gulp that this task is done
         gulpCallback();
     });
+});
+
+gulp.task('imagify', function () {
+    return gulp.src('img/src/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('img/live/'));
 });
