@@ -17,7 +17,6 @@ body {
 
 #section0 {
     background: url("../img/tlogocrop.png") no-repeat center center fixed;
-    background-attachment: scroll
     background-color: #674583;
     text-align: center;
 }
@@ -37,6 +36,7 @@ body {
         -moz-background-size: contain;
         -o-background-size: contain;
         background-size: contain;
+        background-attachment: scroll
     }
 
     .imgbg {
