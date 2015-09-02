@@ -167,4 +167,9 @@ nav ul li.active {
 .now {
     -webkit-transform: rotate(320deg);
 }
-
+.fullheight{
+    height: 100%;
+}
+#blog .card-panel{
+    height: 100%;
+}

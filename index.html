@@ -27,7 +27,9 @@
                 menu: '#menu',
                 responsiveHeight: 500,
                 responsiveWidth: 999,
-                scrollingSpeed: 1000
+                scrollingSpeed: 1000,
+                verticalCentered: false
+
             });
             $('.button-collapse').sideNav({
                         menuWidth: 300, // Default is 240
@@ -35,6 +37,7 @@
                         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
                     }
             );
+            $('.slider').slider({full_width: true});
 
             window.scrollTo(0, 1);
         });
@@ -65,75 +68,130 @@
     <div class="section" id="section0">
         <div class="container">
             <img class="os now" src="img/live/we-are-open-sign.png">
+
             <div class="hide-on-med-and-down"><a href="#" id="button1Id" onclick="$.fn.fullpage.moveSectionDown();"><i
                     class="fa fa-chevron-down fa-2x sdown"></i></a></div>
         </div>
     </div>
-    <div class="section" id="section1">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <img src="img/live/tlogocrop.png" class="responsive-img center-align title-img" alt=""/>
+    <div class="section" id="homepage">
+        <div class="row">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/live/IMG_1804.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/live/IMG_1814.jpg"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/live/IMG_1867.jpg"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/live/IMG_1871.jpg"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 m12 s12 fullheight">
+                <div class="col l3 m3 s12">
+                    <img src="img/live/simba.jpg" class="responsive-img circle">
                 </div>
-                <div class="row">
-                    <div class="col s12 m3 l3">
-                        <img src="img/live/sitting.png" class="responsive-img hide-on-small-and-down">
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <p>
-                            Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
-                            form of a manual that in ancient India were written down in books of palm leaves sewn
-                            together with a thread.
-                        </p>
+                <div class="col l9 m9 s12">
 
-                        <p>
-                            Shakespeare said, “If music be the food of love play on”
-                            And khanasutra adds, “If food be the music of life eat on”
-                        </p>
+                    This is a sample blog entry
+                    This is a sample blog entry
+                    This is a sample blog entry
+                    This is a sample blog entry
+                    This is a sample blog entry
+                    This is a sample blog entry
+                </div>
+            </div>
 
-                        <p>
-                            So we bring together good food and good music
-                        </p>
-                        <img class="responsive-img title-img" src="img/live/violin.png">
-                    </div>
-                    <div class="col s12 m3 l3 hide-on-small-and-down">
-                        <img class="responsive-img" src="img/live/deserts.png">
-                    </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="section1">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <img src="img/live/tlogocrop.png" class="responsive-img center-align title-img" alt=""/>
+            </div>
+            <div class="row">
+                <div class="col s12 m3 l3">
+                    <img src="img/live/sitting.png" class="responsive-img hide-on-small-and-down">
+                </div>
+                <div class="col s12 m6 l6">
+                    <p>
+                        Khana simply means food in India. Sutra is a collection of aphorisms or proven truths in
+                        form of a manual that in ancient India were written down in books of palm leaves sewn
+                        together with a thread.
+                    </p>
+
+                    <p>
+                        Shakespeare said, “If music be the food of love play on”
+                        And khanasutra adds, “If food be the music of life eat on”
+                    </p>
+
+                    <p>
+                        So we bring together good food and good music
+                    </p>
+                    <img class="responsive-img title-img" src="img/live/violin.png">
+                </div>
+                <div class="col s12 m3 l3 hide-on-small-and-down">
+                    <img class="responsive-img" src="img/live/deserts.png">
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" id="section2">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <h4>Location</h4>
+</div>
+<div class="section" id="section2">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h4>Location</h4>
 
-                    <h5>
-                        2452 Queen Street East
-                        <br>
-                        Brampton
-                        <br>
-                        Ontario - L6S 5X9
-                        <br>
+                <h5>
+                    2452 Queen Street East
+                    <br>
+                    Brampton
+                    <br>
+                    Ontario - L6S 5X9
+                    <br>
 
-                    </h5>
-                    <h7><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp;
-                        1-905-789-7999</i></a></h7>
-                    <h7><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra
-                        (Toll Free)</i></a></h7>
-                </div>
+                </h5>
+                <h7><a class="phone" href="tel:1-905-789-7999"><i class="fa fa-phone fa-lg">&nbsp;
+                    1-905-789-7999</i></a></h7>
+                <h7><a class="phone" href="tel:1-844-547-8872"><i class="fa fa-phone fa-lg">&nbsp; 1-844-KhSutra
+                    (Toll Free)</i></a></h7>
             </div>
-            <br>
+        </div>
+        <br>
 
-            <div class="row google-maps">
-                <div class="col s8 m6 l6 offset-l3 offset-m3 offset-s2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6786225876563!2d-79.70335209999999!3d43.73800269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3dae55761cf5%3A0x899ff64e1c8a0420!2s2452+Queen+St+E%2C+Brampton%2C+ON+L6S+5X9!5e0!3m2!1sen!2sca!4v1438761723407"
-                            width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+        <div class="row google-maps">
+            <div class="col s8 m6 l6 offset-l3 offset-m3 offset-s2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6786225876563!2d-79.70335209999999!3d43.73800269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3dae55761cf5%3A0x899ff64e1c8a0420!2s2452+Queen+St+E%2C+Brampton%2C+ON+L6S+5X9!5e0!3m2!1sen!2sca!4v1438761723407"
+                        width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
