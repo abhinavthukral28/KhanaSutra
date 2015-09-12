@@ -15,10 +15,10 @@ gulp.task('watch', function (gulpCallback) {
         gulp.watch('./index.html', browserSync.reload);
 
         // watch css and stream to BrowserSync when it changes
-        gulp.watch('./css/*', function () {
+        gulp.watch('./assets/css/*', function () {
             // grab css files and send them into browserSync.stream
             // this injects the css into the page
-            gulp.src('./css/*')
+            gulp.src('./assets/css/*')
                 .pipe(browserSync.stream());
         });
 
@@ -28,11 +28,11 @@ gulp.task('watch', function (gulpCallback) {
 });
 
 gulp.task('imagify', function () {
-    return gulp.src('img/src/*')
+    return gulp.src('assets/img/src/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('img/live/'));
+        .pipe(gulp.dest('assets/img/live/'));
 });
