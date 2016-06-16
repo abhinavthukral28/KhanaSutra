@@ -1417,3 +1417,11 @@ position: absolute;
 #galfacebook{
 	width: 100%;
 }
+
+.ot{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 12em;
+	text-align: center;
+}
